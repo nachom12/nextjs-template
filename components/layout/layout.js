@@ -5,16 +5,14 @@ import TemporaryDrawer from "../material/drawer";
 import styles from "../../styles/layout/layout.module.scss";
 
 export default function Layout({ children }) {
-  
-  const [sidebarStatus, setSidebarStatus] = useState(false);
 
   return (
     <>
       <Head>
         <title>Next! template</title>
       </Head>
-      <Header setSidebarStatus={setSidebarStatus} sidebarStatus={sidebarStatus}/>
-      <TemporaryDrawer sidebarStatus={sidebarStatus}/>
+      <Header />
+      <TemporaryDrawer />
       <main className={styles.page}>{children}</main>
     </>
   );

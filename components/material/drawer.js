@@ -8,12 +8,13 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
+import WavingHandIcon from '@mui/icons-material/WavingHand';
 import styles from '../../styles/layout/material/drawer.module.scss';
+import Link from 'next/link';
 
-export default function TemporaryDrawer({sidebarStatus}) {
+export default function TemporaryDrawer() {
 
   const [state, setState] = React.useState({
     left: false,
@@ -35,28 +36,32 @@ export default function TemporaryDrawer({sidebarStatus}) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
+        {['Home', 'Home', 'Home', 'Home'].map((text) => (
+          <Link href="/" key={text}>
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <HomeIcon />
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
       <Divider />
       <List>
-        {['Home'].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <MailIcon />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
+        {['Greet'].map((text) => (
+          <Link href={text.toLowerCase()} key={text}>
+            <ListItem key={text} disablePadding>
+              <ListItemButton >
+                <ListItemIcon>
+                  <WavingHandIcon />
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
