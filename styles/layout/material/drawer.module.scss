@@ -1,0 +1,17 @@
+.hamburger {
+  position: absolute;
+  background-color: rgb(27, 27, 27);
+  border-radius: 0px 5px 5px 0px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  opacity: 0.9;
+  transition: 0.5s;
+  &:hover {
+    opacity: 1;
+  }
+  > * {
+    height: 100%;
+    color: rgb(163, 163, 163) !important;
+  }
+}

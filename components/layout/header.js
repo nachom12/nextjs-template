@@ -1,9 +1,12 @@
 import styles from "../../styles/layout/header.module.scss";
 
 export default function Header() {
+  
   return (
     <div className={styles.header}>
-      <span>Next! Template</span>
+      <div className={styles.header_title}>
+        <span>Next! Template</span>
+      </div>
     </div>
   );
 }
