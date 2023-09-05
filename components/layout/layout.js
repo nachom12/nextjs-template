@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Header from "./header";
-import TemporaryDrawer from "../material/drawer";
+import { HeaderWNavigation } from "../carbon/HeaderWNavigation";
 import styles from "../../styles/layout/layout.module.scss";
 
 export default function Layout({ children }) {
@@ -10,8 +9,7 @@ export default function Layout({ children }) {
       <Head>
         <title>Next! template</title>
       </Head>
-      <Header />
-      <TemporaryDrawer />
+      <HeaderWNavigation />
       <main className={styles.page}>{children}</main>
     </>
   );

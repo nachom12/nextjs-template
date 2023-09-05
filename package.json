@@ -10,9 +10,13 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.7",
     "@mui/material": "^5.14.7",
+    "carbon-components-react": "^8.37.0",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.66.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^7.4.0"
   }
 }
