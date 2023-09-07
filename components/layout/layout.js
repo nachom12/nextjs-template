@@ -1,17 +1,17 @@
+import { useRouter } from 'next/router';
 import Head from "next/head";
-import Header from "./header";
-import TemporaryDrawer from "../material/drawer";
+import { SideNavRailWHeader } from "../../components/carbon/SideNavRailWHeader";
 import styles from "../../styles/layout/layout.module.scss";
 
 export default function Layout({ children }) {
+  const router = useRouter()
 
   return (
     <>
       <Head>
         <title>Next! template</title>
       </Head>
-      <Header />
-      <TemporaryDrawer />
+      <SideNavRailWHeader router={router}/>
       <main className={styles.page}>{children}</main>
     </>
   );
