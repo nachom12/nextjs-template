@@ -19,6 +19,7 @@
     "rules": {
       "quotes": ["error", "single"],
       "linebreak-style" : ["error", "windows"],
+      "no-trailing-spaces": "error",
       "react/jsx-filename-extension": "off",
       "react/react-in-jsx-scope": "off",
       "react/prop-types": "off",

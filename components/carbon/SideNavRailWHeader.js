@@ -1,15 +1,15 @@
 import {
-  Header, 
-  HeaderContainer, 
-  HeaderMenuButton, 
-  HeaderName, 
-  HeaderGlobalBar, 
-  HeaderGlobalAction, 
-  SkipToContent, 
-  SideNav, 
+  Header,
+  HeaderContainer,
+  HeaderMenuButton,
+  HeaderName,
+  HeaderGlobalBar,
+  HeaderGlobalAction,
+  SkipToContent,
+  SideNav,
   SideNavItems,
-  SideNavLink, 
-  SideNavMenu, 
+  SideNavLink,
+  SideNavMenu,
   SideNavMenuItem,
   Theme
   } from 'carbon-components-react';
@@ -69,7 +69,7 @@ export const SideNavRailWHeader = ({...args}) => {
                       </SideNavMenuItem>
                     </SideNavMenu>
                     <SideNavLink  renderIcon={Receipt}>
-                      {domLoaded && <Link href="/greet">Greet 👋</Link>} 
+                      {domLoaded && <Link href="/greet">Greet 👋</Link>}
                     </SideNavLink>
                   </SideNavItems>
                 </SideNav>

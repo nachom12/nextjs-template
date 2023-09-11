@@ -54,5 +54,5 @@ export const HeaderWNavigation = () => <HeaderContainer render={({
     </SideNav>
         </Header>
   </Theme>
-        
+
       </>} />;
