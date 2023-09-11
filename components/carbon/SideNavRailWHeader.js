@@ -19,7 +19,7 @@ import { Alarm, Report, Receipt , UserAvatar } from '@carbon/icons-react';
 import Link from 'next/link';
 
 
-export const SideNavRailWHeader = ({router, ...args}) => {
+export const SideNavRailWHeader = ({...args}) => {
 
   const [domLoaded, setDomLoaded] = useState(false);
 
