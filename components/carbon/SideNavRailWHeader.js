@@ -1,15 +1,15 @@
 import {
-  Header, 
-  HeaderContainer, 
-  HeaderMenuButton, 
-  HeaderName, 
-  HeaderGlobalBar, 
-  HeaderGlobalAction, 
-  SkipToContent, 
-  SideNav, 
+  Header,
+  HeaderContainer,
+  HeaderMenuButton,
+  HeaderName,
+  HeaderGlobalBar,
+  HeaderGlobalAction,
+  SkipToContent,
+  SideNav,
   SideNavItems,
-  SideNavLink, 
-  SideNavMenu, 
+  SideNavLink,
+  SideNavMenu,
   SideNavMenuItem,
   Theme
   } from 'carbon-components-react';
@@ -19,7 +19,7 @@ import { Alarm, Report, Receipt , UserAvatar } from '@carbon/icons-react';
 import Link from 'next/link';
 
 
-export const SideNavRailWHeader = ({router, ...args}) => {
+export const SideNavRailWHeader = ({...args}) => {
 
   const [domLoaded, setDomLoaded] = useState(false);
 
@@ -69,7 +69,7 @@ export const SideNavRailWHeader = ({router, ...args}) => {
                       </SideNavMenuItem>
                     </SideNavMenu>
                     <SideNavLink  renderIcon={Receipt}>
-                      {domLoaded && <Link href="/greet">Greet 👋</Link>} 
+                      {domLoaded && <Link href="/greet">Greet 👋</Link>}
                     </SideNavLink>
                   </SideNavItems>
                 </SideNav>
