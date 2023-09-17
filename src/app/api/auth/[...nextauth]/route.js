@@ -38,3 +38,4 @@ export const handler = NextAuth(authOptions);
 export {handler as GET}
 export {handler as POST}
 
+// export const dynamic = 'force-static';
