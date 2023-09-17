@@ -1,6 +1,7 @@
+import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
-const options = {
+export const authOptions = {
   providers: [
     CredentialsProvider({
       // The name to display on the sign in form (e.g. "Sign in with...")
@@ -32,5 +33,8 @@ const options = {
   ]
 }
 
+export const handler = NextAuth(authOptions);
 
-export default options;
+export {handler as GET}
+export {handler as POST}
+
