@@ -24,6 +24,7 @@
       "react/react-in-jsx-scope": "off",
       "react/prop-types": "off",
       "no-useless-return": "warn",
-      "import/no-extraneous-dependencies": "off"
+      "import/no-extraneous-dependencies": "off",
+      "indent": ["error", 2]
     }
 }

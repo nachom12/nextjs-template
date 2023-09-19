@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import config from '../config';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
       <p className={styles.description}>
         Or just customize your routes,
         go to <Link href="greet"><i><u>the greet page</u></i></Link>
+      </p>
+      <p className={styles.description}>
+        Environment : {config.current_env}
       </p>
     </div>
   )
